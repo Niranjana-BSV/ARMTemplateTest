@@ -3,31 +3,31 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "eastus"
+            "value": "southindia"
         },
         "storageAccountName": {
-            "value": "teststgaccniru"
+            "value": "teststgaccniru1"
         },
         "accountType": {
-            "value": "Standard_RAGRS"
+            "value": "Standard_ZRS"
         },
         "kind": {
             "value": "StorageV2"
         },
         "accessTier": {
-            "value": "Hot"
+            "value": "Cold"
         },
         "minimumTlsVersion": {
             "value": "TLS1_2"
         },
         "supportsHttpsTrafficOnly": {
-            "value": true
+            "value": false
         },
         "allowBlobPublicAccess": {
             "value": true
         },
         "allowSharedKeyAccess": {
-            "value": true
+            "value": false
         },
         "networkAclsBypass": {
             "value": "AzureServices"
