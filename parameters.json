@@ -6,7 +6,7 @@
             "value": "southindia"
         },
         "storageAccountName": {
-            "value": "teststgaccniru1"
+            "value": "teststgaccniru"
         },
         "accountType": {
             "value": "Standard_ZRS"
@@ -21,13 +21,13 @@
             "value": "TLS1_2"
         },
         "supportsHttpsTrafficOnly": {
-            "value": false
+            "value": true
         },
         "allowBlobPublicAccess": {
             "value": true
         },
         "allowSharedKeyAccess": {
-            "value": false
+            "value": true
         },
         "networkAclsBypass": {
             "value": "AzureServices"
