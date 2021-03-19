@@ -1,0 +1,25 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'DevOpsPortalConn'
+    subscriptionId: '11c19c66-6ce8-47c9-8d02-497a8de0e133'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'Niranjana'
+    location: 'East US'
+    templateLocation: 'Linked artifact'
+    csmFile: 'https://raw.githubusercontent.com/Niranjana-BSV/ARMTemplateTest/main/template.json'
+    csmParametersFile: 'https://raw.githubusercontent.com/Niranjana-BSV/ARMTemplateTest/main/parameters.json'
+    deploymentMode: 'Incremental'
+    deploymentName: 'StgAccTemplateDeploymentPipeline'
